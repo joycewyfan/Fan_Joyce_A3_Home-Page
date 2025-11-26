@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+    
+    .home-page,
+.home-page * {
+  box-sizing: border-box;
+}
+.home-page {
+  background: var(--soft-grey, #f2f2f2);
+  height: 3454px;
+  position: relative;
+  overflow: hidden;
+}
+.group-6 {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  left: 120px;
+  top: 2141px;
+}
+.group-62 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.rectangle-60 {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+  object-fit: cover;
+}
+.drinks {
+  color: var(--pure-white, #ffffff);
+  text-align: center;
+  font-family: "SpaceMono-Bold", sans-serif;
+  font-size: 40px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 700;
+  position: absolute;
+  right: 10%;
+  left: 9.71%;
+  width: 80.29%;
+  bottom: 41.71%;
+  top: 41.43%;
+  height: 16.86%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-54 {
+  background: var(--sage-green, #87a280);
+  width: 1440px;
+  height: 640px;
+  position: absolute;
+  left: 0px;
+  top: 1965px;
+}
+.rectangle-55 {
+  background: var(--brown, #b9a590);
+  width: 1440px;
+  height: 427px;
+  position: absolute;
+  left: 0px;
+  top: 2605px;
+}
+.rectangle-50 {
+  width: 1440px;
+  height: 810px;
+  position: absolute;
+  left: 0px;
+  top: 117px;
+  object-fit: cover;
+}
+.rectangle-9 {
+  background: var(--pure-white, #ffffff);
+  width: 1440px;
+  height: 120px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-10 {
+  background: var(--charcoal, #333333);
+  width: 1440px;
+  height: 422px;
+  position: absolute;
+  left: 0px;
+  top: 3032px;
+}
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 205px;
+  position: absolute;
+  left: 633px;
+  top: 3110px;
+}
+.explore {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Bold", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.about {
+  flex-shrink: 0;
+  width: 205px;
+  height: 41px;
+  position: relative;
+}
+.about2 {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.food-review {
+  flex-shrink: 0;
+  width: 205px;
+  height: 41px;
+  position: relative;
+}
+.food-review2 {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.my-top-picks {
+  flex-shrink: 0;
+  width: 205px;
+  height: 41px;
+  position: relative;
+}
+.my-top-picks2 {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact {
+  flex-shrink: 0;
+  width: 205px;
+  height: 41px;
+  position: relative;
+}
+.contact2 {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 167px;
+  position: absolute;
+  left: 865px;
+  top: 3110px;
+}
+.follow-me {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Bold", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.instagram {
+  flex-shrink: 0;
+  width: 167px;
+  height: 41px;
+  position: relative;
+}
+.instagram2 {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.linkedin {
+  flex-shrink: 0;
+  width: 167px;
+  height: 41px;
+  position: relative;
+}
+.linkedin2 {
+  color: var(--pure-white, #ffffff);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.updates-news-sign-up-with-your-email {
+  color: #ffffff;
+  text-align: left;
+  font-family: "SpaceMono-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 1042px;
+  top: 3126px;
+  width: 310px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.email {
+  width: 310px;
+  height: 66px;
+  position: absolute;
+  left: 1042px;
+  top: 3206px;
+}
+.rectangle-11 {
+  background: var(--pure-white, #ffffff);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.email-address {
+  color: #d8d8d8;
+  text-align: left;
+  font-family: "WorkSans-Regular", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 4.84%;
+  width: 95.16%;
+  bottom: 15.15%;
+  top: 15.15%;
+  height: 69.7%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-sign-up {
+  width: 168px;
+  height: 55px;
+  position: absolute;
+  left: 1042px;
+  top: 3288px;
+}
+.rectangle-12 {
+  background: var(--warm-beige, #e6dac6);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.sign-up {
+  color: var(--charcoal, #333333);
+  text-align: center;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+  position: absolute;
+  right: 9.52%;
+  left: 8.93%;
+  width: 81.55%;
+  bottom: 7.27%;
+  top: 9.09%;
+  height: 83.64%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hi-i-m-joyce-fan {
+  color: var(--soft-grey, #f2f2f2);
+  text-align: left;
+  font-family: "NicoMoji-Regular", sans-serif;
+  font-size: 96px;
+  line-height: 80px;
+  font-weight: 400;
+  position: absolute;
+  left: 120px;
+  top: 183px;
+  width: 632px;
+  height: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.i-m-on-a-mission-to-taste-explore-and-share-the-best-eats-around-the-world-from-cozy-caf-s-to-hidden-gems-join-me-on-my-food-adventures {
+  color: var(--soft-grey, #f2f2f2);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 24px;
+  line-height: var(--static-headline-large-line-height, 40px);
+  font-weight: 400;
+  position: absolute;
+  left: 120px;
+  top: 493px;
+  width: 627px;
+  height: 160px;
+}
+.food-explorer-photographer-learner {
+  color: var(--soft-grey, #f2f2f2);
+  text-align: left;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 48px;
+  line-height: var(--static-headline-large-line-height, 40px);
+  font-weight: 400;
+  position: absolute;
+  left: 120px;
+  top: 398px;
+  width: 627px;
+  height: 94px;
+}
+.about-me {
+  width: 217px;
+  height: 55px;
+  position: absolute;
+  left: 120px;
+  top: 675px;
+}
+.rectangle-122 {
+  background: var(--brown, #b9a590);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.about-me2 {
+  color: var(--charcoal, #333333);
+  text-align: center;
+  font-family: "WorkSans-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 700;
+  position: absolute;
+  right: 20.28%;
+  left: 20.28%;
+  width: 59.45%;
+  bottom: 7.27%;
+  top: 9.09%;
+  height: 83.64%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-502 {
+  width: 526px;
+  height: 725px;
+  position: absolute;
+  left: 0px;
+  top: 1240px;
+  object-fit: cover;
+}
+.rectangle-52 {
+  width: 622px;
+  height: 385px;
+  position: absolute;
+  left: 760px;
+  top: 1580px;
+  object-fit: cover;
+}
+.rectangle-51 {
+  width: 520px;
+  height: 377px;
+  position: absolute;
+  left: 920px;
+  top: 927px;
+  object-fit: cover;
+}
+.featured-reviews {
+  color: var(--charcoal, #333333);
+  text-align: center;
+  font-family: "NicoMoji-Regular", sans-serif;
+  font-size: 64px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  left: 457px;
+  top: 1304px;
+  width: 525px;
+  height: 184px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-top-picks3 {
+  color: var(--charcoal, #333333);
+  text-align: left;
+  font-family: "NicoMoji-Regular", sans-serif;
+  font-size: 64px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  left: 120px;
+  top: 2006px;
+  width: 673px;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.see-more {
+  width: 217px;
+  height: 55px;
+  position: absolute;
+  left: 611px;
+  top: 1460px;
+}
+.rectangle-53 {
+  background: var(--brown, #b9a590);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.see-more2 {
+  color: var(--charcoal, #333333);
+  text-align: center;
+  font-family: "WorkSans-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 700;
+  position: absolute;
+  right: 20.28%;
+  left: 20.28%;
+  width: 59.45%;
+  bottom: 7.27%;
+  top: 9.09%;
+  height: 83.64%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-me {
+  width: 217px;
+  height: 55px;
+  position: absolute;
+  left: 611px;
+  top: 2944px;
+}
+.rectangle-56 {
+  background: var(--warm-beige, #e6dac6);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.contact-me2 {
+  color: var(--charcoal, #333333);
+  text-align: center;
+  font-family: "WorkSans-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 700;
+  position: absolute;
+  right: 20.28%;
+  left: 20.28%;
+  width: 59.45%;
+  bottom: 7.27%;
+  top: 9.09%;
+  height: 83.64%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 67px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 120px;
+  top: 2661px;
+}
+.rectangle-562 {
+  border-radius: 3px;
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+.rectangle-57 {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+.rectangle-59 {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+.rectangle-58 {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  object-fit: cover;
+}
+.rectangle-602 {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+  object-fit: cover;
+}
+.group-7 {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  left: 540px;
+  top: 2141px;
+}
+.rectangle-61 {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+  object-fit: cover;
+}
+.snacks {
+  color: var(--pure-white, #ffffff);
+  text-align: center;
+  font-family: "SpaceMono-Bold", sans-serif;
+  font-size: 40px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 700;
+  position: absolute;
+  right: 10%;
+  left: 9.71%;
+  width: 80.29%;
+  bottom: 41.71%;
+  top: 41.43%;
+  height: 16.86%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-8 {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  left: 960px;
+  top: 2141px;
+}
+.rectangle-62 {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+  object-fit: cover;
+}
+.food {
+  color: var(--pure-white, #ffffff);
+  text-align: center;
+  font-family: "SpaceMono-Bold", sans-serif;
+  font-size: 40px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 700;
+  position: absolute;
+  right: 10%;
+  left: 9.71%;
+  width: 80.29%;
+  bottom: 41.71%;
+  top: 41.43%;
+  height: 16.86%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-19 {
+  position: absolute;
+  inset: 0;
+}
+.food-review3 {
+  width: 195px;
+  height: 41px;
+  position: absolute;
+  left: 755px;
+  top: 76px;
+}
+.food-review4 {
+  color: #7e7e7e;
+  text-align: center;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-picks {
+  width: 176px;
+  height: 41px;
+  position: absolute;
+  left: 950px;
+  top: 76px;
+}
+.top-picks2 {
+  color: #7e7e7e;
+  text-align: center;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about3 {
+  width: 140px;
+  height: 41px;
+  position: absolute;
+  left: 1126px;
+  top: 76px;
+}
+.about4 {
+  color: #7e7e7e;
+  text-align: center;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact3 {
+  width: 136px;
+  height: 41px;
+  position: absolute;
+  left: 1266px;
+  top: 76px;
+}
+.contact4 {
+  color: #7e7e7e;
+  text-align: center;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-11 {
+  width: 384px;
+  height: 120px;
+  position: absolute;
+  left: 60px;
+  top: 0px;
+}
+.group-112 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.the-fan-club {
+  color: var(--charcoal, #333333);
+  text-align: center;
+  font-family: "NicoMoji-Regular", sans-serif;
+  font-size: 45px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food-edition {
+  color: var(--charcoal, #333333);
+  text-align: center;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 6.25%;
+  left: 6.25%;
+  width: 87.5%;
+  bottom: 2.5%;
+  top: 63.33%;
+  height: 34.17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.white-logo {
+  width: 384px;
+  height: 120px;
+  position: absolute;
+  left: 66px;
+  top: 3080px;
+}
+.the-fan-club2 {
+  color: var(--pure-white, #ffffff);
+  text-align: center;
+  font-family: "NicoMoji-Regular", sans-serif;
+  font-size: 45px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food-edition2 {
+  color: var(--pure-white, #ffffff);
+  text-align: center;
+  font-family: "SpaceMono-Regular", sans-serif;
+  font-size: 22px;
+  line-height: var(--static-display-medium-line-height, 52px);
+  font-weight: 400;
+  position: absolute;
+  right: 6.25%;
+  left: 6.25%;
+  width: 87.5%;
+  bottom: 0%;
+  top: 65.83%;
+  height: 34.17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="home-page">
+    <div class="group-6">
+      <div class="group-62">
+        <img class="rectangle-60" src="rectangle-600.svg" />
+        <div class="drinks">Drinks</div>
+      </div>
+    </div>
+    <div class="rectangle-54"></div>
+    <div class="rectangle-55"></div>
+    <img class="rectangle-50" src="rectangle-500.png" />
+    <div class="rectangle-9"></div>
+    <div class="rectangle-10"></div>
+    <div class="frame-5">
+      <div class="explore">Explore</div>
+      <div class="about">
+        <div class="about2">About</div>
+      </div>
+      <div class="food-review">
+        <div class="food-review2">Food Review</div>
+      </div>
+      <div class="my-top-picks">
+        <div class="my-top-picks2">My Top Picks</div>
+      </div>
+      <div class="contact">
+        <div class="contact2">Contact</div>
+      </div>
+    </div>
+    <div class="frame-6">
+      <div class="follow-me">Follow Me</div>
+      <div class="instagram">
+        <div class="instagram2">Instagram</div>
+      </div>
+      <div class="linkedin">
+        <div class="linkedin2">Linkedin</div>
+      </div>
+    </div>
+    <div class="updates-news-sign-up-with-your-email">
+      Updates? News? Sign up with your email.
+    </div>
+    <div class="email">
+      <div class="rectangle-11"></div>
+      <div class="email-address">Email Address</div>
+    </div>
+    <div class="footer-sign-up">
+      <div class="rectangle-12"></div>
+      <div class="sign-up">Sign Up</div>
+    </div>
+    <div class="hi-i-m-joyce-fan">Hi I’m Joyce Fan</div>
+    <div
+      class="i-m-on-a-mission-to-taste-explore-and-share-the-best-eats-around-the-world-from-cozy-caf-s-to-hidden-gems-join-me-on-my-food-adventures"
+    >
+      I’m on a mission to taste, explore, and share the best eats around the
+      world. From cozy cafés to hidden gems, join me on my food adventures!
+    </div>
+    <div class="food-explorer-photographer-learner">
+      Food Explorer, Photographer, Learner
+    </div>
+    <div class="about-me">
+      <div class="rectangle-122"></div>
+      <div class="about-me2">About Me</div>
+    </div>
+    <img class="rectangle-502" src="rectangle-501.png" />
+    <img class="rectangle-52" src="rectangle-520.png" />
+    <img class="rectangle-51" src="rectangle-510.png" />
+    <div class="featured-reviews">Featured Reviews</div>
+    <div class="my-top-picks3">My Top Picks</div>
+    <div class="see-more">
+      <div class="rectangle-53"></div>
+      <div class="see-more2">See More</div>
+    </div>
+    <div class="contact-me">
+      <div class="rectangle-56"></div>
+      <div class="contact-me2">Contact Me</div>
+    </div>
+    <div class="frame-4">
+      <img class="rectangle-562" src="rectangle-561.png" />
+      <img class="rectangle-57" src="rectangle-570.png" />
+      <img class="rectangle-59" src="rectangle-590.png" />
+      <img class="rectangle-58" src="rectangle-580.png" />
+    </div>
+    <div class="group-6">
+      <div class="group-62">
+        <img class="rectangle-602" src="rectangle-601.svg" />
+        <div class="drinks">Drinks</div>
+      </div>
+    </div>
+    <div class="group-7">
+      <img class="rectangle-61" src="rectangle-610.svg" />
+      <div class="snacks">Snacks</div>
+    </div>
+    <div class="group-8">
+      <img class="rectangle-62" src="rectangle-620.svg" />
+      <div class="food">Food</div>
+    </div>
+    <div class="food-review3">
+      <div class="food-review4">Food Review</div>
+    </div>
+    <div class="top-picks">
+      <div class="top-picks2">Top Picks</div>
+    </div>
+    <div class="about3">
+      <div class="about4">About</div>
+    </div>
+    <div class="contact3">
+      <div class="contact4">Contact</div>
+    </div>
+    <div class="group-11">
+      <div class="group-112">
+        <div class="the-fan-club">The Fan Club</div>
+        <div class="food-edition">Food Edition</div>
+      </div>
+    </div>
+    <div class="white-logo">
+      <div class="the-fan-club2">The Fan Club</div>
+      <div class="food-edition2">Food Edition</div>
+    </div>
+  </div>
+  
+</body>
+</html>
