@@ -77,34 +77,49 @@
     .logo-title {
       color: var(--charcoal);
       font-family: "NicoMoji-Regular", sans-serif;
-      font-size: 45px;
-      line-height: 52px;
-    }
+     /* Header */
+      header {
+        background: white;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
 
-    .logo-subtitle {
-      color: var(--charcoal);
-      font-family: "SpaceMono-Regular", sans-serif;
-      font-size: 22px;
-      line-height: 52px;
-    }
+      .logo h1 {
+        font-family: 'Space Mono', monospace;
+        font-size: 45px;
+        font-weight: 700;
+      }
 
-    .nav-menu {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-    }
+      .logo p {
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        text-align: center;
+      }
 
-    .nav-link {
-      color: #7e7e7e;
-      font-family: "SpaceMono-Regular", sans-serif;
-      font-size: 22px;
-      line-height: 52px;
-      transition: color 0.3s;
-    }
+      nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
 
-    .nav-link:hover {
-      color: var(--charcoal);
-    }
+      nav a {
+        font-family: 'Space Mono', monospace;
+        font-size: 22px;
+        color: #7e7e7e;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      nav a.active,
+      nav a:hover {
+        color: #333;
+      }
 
     /* ===========================
        HERO SECTION
@@ -409,19 +424,20 @@
 </head>
 <body>
   <!-- HEADER -->
-  <header class="header">
-    <div class="logo">
-      <div class="logo-title">The Fan Club</div>
-      <div class="logo-subtitle">Food Edition</div>
-    </div>
-    
-    <nav class="nav-menu">
-      <a href="https://github.com/joycewyfan/Fan_Joyce_A3_Food-Review/blob/main/index.html" class="nav-link">Food Review</a>
-      <a href="https://github.com/joycewyfan/Fan_Joyce_A3_My-Top-Picks/blob/main/index.html" class="nav-link">Top Picks</a>
-      <a href="https://github.com/joycewyfan/Fan_Joyce_A3_About-Me/blob/main/index.html" class="nav-link">About</a>
-      <a href="https://github.com/joycewyfan/Fan_Joyce_A3_Contact-/blob/main/index.html" class="nav-link">Contact</a>
-    </nav>
-  </header>
+  <header>
+      <div class="logo">
+        <h1>The Fan Club</h1>
+        <p>Food Edition</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://joycewyfan.github.io/Fan_Joyce_A3_Food-Review/" class="active">Food Review</a></li>
+          <li><a href="https://joycewyfan.github.io/Fan_Joyce_A3_My-Top-Picks/">Top Picks</a></li>
+          <li><a href="https://joycewyfan.github.io/Fan_Joyce_A3_About-Me/">About</a></li>
+          <li><a href="https://joycewyfan.github.io/Fan_Joyce_A3_Contact-/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
   <div class="page-container">
     <!-- HERO SECTION -->
